@@ -110,3 +110,31 @@ header .action a i {
 		display: flex;
 	}
 }
+
+/* hamburger menu style */ 
+.hamb {
+	width: 32px;
+	cursor: pointer;
+}
+
+.hamb span {
+	display: block;
+	height: 2px;
+	background-color: var(--clr-black);
+}
+
+.hamb span.mid {
+	margin: 7px;
+}
+
+.hamb.active span.top {
+	transform: translateY(9px) rotate(42deg);
+}
+
+.hamb.active span.mid {
+	opacity: 0;;
+}
+
+.hamb.active span.bottom {
+	transform: translateY(-9px) rotate(-42deg);
+}
