@@ -40,3 +40,73 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+/* repeated style */
+.container {
+	width: 1280px;
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+/* header style */
+header {
+	padding: 28px 0;
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: var(--clr-white);
+}
+
+header .container {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .left {
+	display: flex;
+	gap: 50px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+header .left .logo img {
+	height: 40px;
+}
+
+header .left .nav-desktop {
+	display: flex;
+	gap: 32px;
+
+	display: none;
+}
+
+header .left .nav-desktop a {
+	color: var(--clr-black);
+	transition: .3s color;
+}
+
+header .left .nav-desktop a:hover {
+	color: var(--clr-primary);
+}
+
+header .action {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+header .action a i {
+	font-size: 18px;
+	color: var(--clr-black);
+}
+
+@media screen and (min-width: 780px) {
+	header .left .nav-desktop {
+		display: flex;
+	}
+}
