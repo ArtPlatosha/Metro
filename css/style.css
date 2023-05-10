@@ -146,3 +146,32 @@ header .action a i {
 		display: none;
 	}
 }
+
+/* phone navigation */
+.mobile-nav {
+	width: 450px;
+	max-width: 100%;
+	background-color: var(--clr-white);
+	padding: 80px 40px 40px;
+	display: grid;
+	gap: 32px;
+	text-align: center;
+	position: fixed;
+	top: 65px;
+	right: -450px;
+	z-index: 4;
+	transition: .3s right;
+}
+
+.mobile-nav.slide {
+	right: 0;
+}
+
+.mobile-nav a {
+	font-size: 18px;
+	color: var(--clr-black);
+}
+
+.mobile-nav a:hover {
+	color: var(--clr-primary);
+}
