@@ -175,3 +175,96 @@ header .action a i {
 .mobile-nav a:hover {
 	color: var(--clr-primary);
 }
+
+/* hero section */
+.hero {
+	width: 100%;
+	height: auto;
+	margin-top: 105px;
+	background-color: #abe0d0;
+	background-image: url(../img/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 35% center;
+}
+
+.hero .container {
+	padding: 230px 0px;
+	position: relative;
+}
+
+.hero .desc {
+	width: 550px;
+	max-width: 100%;
+	color: var(--clr-white);
+}
+
+.hero .title {
+	font-size: 40px;
+	line-height: 1.1;
+}
+
+.hero .text {
+	font-size: 18px;
+	font-weight: 400;
+	margin: 24px 0 32px;
+}
+
+.btn {
+	text-transform: capitalize;
+	color: var(--clr-black);
+}
+
+.btn-fill {
+	background-color: var(--clr-white);
+	border: 2px solid var(--clr-white);
+	border-radius: 5px;
+	padding: 10px 32px;
+	transition-duration: .3s;
+	transition-property: color, border, background-color;
+}
+
+.btn-fill:is(:hover, :active) {
+	background-color: transparent;
+	border: 2px solid var(--clr-white);
+	color: var(--clr-white);
+}
+
+.hero .connect {
+	display: flex;
+	gap: 60px;
+	align-items: center;
+	position: absolute;
+	bottom: 50px;
+}
+
+.hero .connect .social {
+	display: flex;
+	gap: 12px;
+	position: relative;
+}
+
+.hero .connect .social::before {
+	content: '';
+	width: 25px;
+	height: 2px;
+	background-color: var(--clr-black);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -40px;
+}
+
+.hero .connect .social a {
+	font-size: 24px;
+	color: var(--clr-black);
+	transition: .3s color;
+}
+
+.hero .connect .social a:hover {
+	color: var(--clr-white);
+}
+
+.hero .connect .social a i {
+	vertical-align: middle;
+}
