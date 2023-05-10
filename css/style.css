@@ -354,3 +354,147 @@ header .action a i {
 .featured .product:hover .placeholder {
 	transform: scale(1.1);
 }
+
+/* new arrivals section */
+.new {
+	padding: 90px 0 10px;
+}
+
+.heading {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.heading .title {
+	font-size: 30px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.new .products {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.new .products .card {
+	width: 300px;
+	max-width: 100%;
+	height: 380px;
+	max-height: 100%;
+	border-radius: 7px;
+	overflow: hidden;
+	position: relative;
+}
+
+.new .products .card.toggle-view {
+	display: none;
+}
+
+@media screen and (min-width: 700px) {
+	.new .products .card.toggle-view {
+		display: block;
+	}
+}
+
+.new .products .card .image {
+	width: 100%;
+	height: 315px;
+	background-color: #cccccc;
+	cursor: pointer;
+	transition: .3s;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.new .products .card:nth-child(1) .image {
+	background-image: url(../img/new/product-1.jpg);
+}
+
+.new .products .card:nth-child(2) .image {
+	background-image: url(../img/new/product-2.jpg);
+}
+
+.new .products .card:nth-child(3) .image {
+	background-image: url(../img/new/product-3.jpg);
+}
+
+.new .products .card:nth-child(4) .image {
+	background-image: url(../img/new/product-4.jpg);
+}
+
+.new .products .card:nth-child(5) .image {
+	background-image: url(../img/new/product-5.jpg);
+}
+
+.new .products .card:nth-child(6) .image {
+	background-image: url(../img/new/product-6.jpg);
+}
+
+.new .products .card:nth-child(7) .image {
+	background-image: url(../img/new/product-7.jpg);
+}
+
+.new .products .card:nth-child(8) .image {
+	background-image: url(../img/new/product-8.jpg);
+}
+
+.new .products .card .overlay {
+	text-align: center;
+	margin-top: 12px;
+}
+
+.new .products .card .overlay .details a.tag {
+	font-size: 16px;
+	font-weight: 400;
+	color: #666666;
+	margin-bottom: 8px;
+}
+
+.new .products .card .action {
+	margin-top: 12px;
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	justify-content: center;
+}
+
+.new .products .card .action a {
+	background-color: var(--clr-black);
+	color: var(--clr-white);
+	padding: 8px 12px;
+	border-radius: 5px;
+}
+
+.new .products .card .action a i {
+	vertical-align: middle;
+}
+
+.new .products .card .action a:hover {
+	background-color: #666666;
+}
+
+.new .products .card .action a.select {
+	padding: 8px 16px;
+}
+
+.new .products .card .offer {
+	background-color: var(--clr-black);
+	color: var(--clr-white);
+	padding: 4px 12px;
+	border-radius: 3px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+.new .products .card:hover {
+	box-shadow: 0 0 15px #e7e7e7;
+}
+
+.new .products .card:is(:hover, :active) .image {
+	height: 250px;
+}
