@@ -121,6 +121,8 @@ header .action a i {
 	display: block;
 	height: 2px;
 	background-color: var(--clr-black);
+	transition-duration: .3s;
+	transition-property: transform opacity;
 }
 
 .hamb span.mid {
@@ -137,4 +139,10 @@ header .action a i {
 
 .hamb.active span.bottom {
 	transform: translateY(-9px) rotate(-42deg);
+}
+
+@media screen and (min-width: 780px) {
+	.hamb {
+		display: none;
+	}
 }
