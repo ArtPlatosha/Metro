@@ -498,3 +498,84 @@ header .action a i {
 .new .products .card:is(:hover, :active) .image {
 	height: 250px;
 }
+
+/* trending items section */
+.trending {
+	padding-top: 90px;
+}
+
+.trending .container {
+	width: 20000px;
+}
+
+.trending .items {
+	display: grid;
+	gap: 16px;
+	grid-template-columns: 1fr;
+}
+
+.trending .items .card {
+	width: 100%;
+	height: 340px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: var(--clr-white);
+	position: relative;
+}
+
+.trending .items .card:nth-child(1) {
+	background-image: url(../img/trending-1.jpg);
+	height: 680px;
+}
+
+.trending .items .card:nth-child(2) {
+	background-image: url(../img/trending-2.jpg);
+}
+
+.trending .items .card:nth-child(3) {
+	background-image: url(../img/trending-3.jpg);
+}
+
+.trending .items .card h4 {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.trending .items .card h3 {
+	font-size: 40px;
+	font-weight: 500;
+}
+
+.trending .items .right .desc,
+.trending .items .left .desc {
+	position: absolute;
+	top: 40%;
+}
+
+.trending .items .right .desc {
+	right: 30px;
+}
+
+.trending .items .left .desc {
+	left: 30px;
+}
+
+@media screen and (min-width: 750px) {
+	.trending .items {
+		gap: 0px;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.trending .items .right .desc {
+		right: 60px;
+	}
+
+	.trending .items .left .desc {
+		left: 60px;
+	}
+
+	.trending .items .card:nth-child(1) {
+		grid-row: 1/3;
+	}
+}
