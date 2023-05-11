@@ -710,3 +710,81 @@ header .action a i {
 .newsletter form label i {
 	vertical-align: middle;
 }
+
+/* footer section */
+footer {
+	margin-top: 50px;
+	padding: 50px 0;
+	background-color: var(--clr-black);
+	color: var(--clr-white);
+}
+
+footer .top {
+	padding-bottom: 35px;
+	border-bottom: 1px solid #e1e1e1;
+	display: grid;
+	gap: 32px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+footer .top .about .logo {
+	width: 150px;
+	margin-bottom: 30px;
+}
+
+footer .top .about .details,
+footer .top .box .links {
+	display: grid;
+	gap: 12px;
+}
+
+footer .top .box .heading {
+	margin-bottom: 30px;
+	text-align: left;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+footer .top .box .links span {
+	display: block;
+}
+
+footer .top .box .links a {
+	color: #eeeeee;
+	font-size: 17px;
+}
+
+footer .top .box .links span:hover a {
+	transform: translateX(12px);
+	text-decoration: underline;
+	color: #767efb;
+}
+
+@media screen and (min-width: 800px) {
+	footer .top {
+		grid-template-columns: 2fr 1fr 1fr 1fr;
+	}
+}
+
+footer .bottom {
+	padding-top: 35px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+footer .bottom .social {
+	display: flex;
+	gap: 18px;;
+}
+
+footer .bottom .social a {
+	font-size: 18px;
+	color: var(--clr-white);
+}
+
+footer .bottom .social a:hover {
+	color: #767efb;
+}
