@@ -636,3 +636,77 @@ header .action a i {
 	font-size: 18px;
 	font-weight: 500;
 }
+
+/* newsletter section */
+.newsletter {
+	padding-top: 90px;
+}
+
+.newsletter .container {
+	padding: 110px 0 110px 8%;
+	border: 1px solid #e1e1e1;
+	background-image: url(../img/nedwslater-banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.newsletter .content {
+	width: 500px;
+	max-width: 100%;
+}
+
+.newsletter .content  h4 {
+	font-size: 32px;
+	font-weight: 500;
+	text-transform: capitalize;
+	line-height: 1.2;
+	margin-bottom: 12px;
+}
+
+.newsletter form {
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+	.newsletter form {
+		gap: 0px;
+		justify-content: flex-start;
+	}	
+}
+
+.newsletter form input {
+	display: inline-block;
+	border: none;
+	outline: none;
+	background-color: #e1e1e1;
+	padding: 16px 18px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+}
+
+.newsletter form input[type='email'] {
+	width: 300px;
+	max-width: 100%;
+}
+
+.newsletter form input[type='email']:focus {
+	background-color: #f0f0f0;
+}
+
+.newsletter form input[type='submit'] {
+	cursor: pointer;
+}
+
+.newsletter form label {
+	display: inline-block;
+	background-color: #e1e1e1;
+	padding-right: 18px;
+}
+
+.newsletter form label i {
+	vertical-align: middle;
+}
